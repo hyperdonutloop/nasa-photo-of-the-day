@@ -1,12 +1,8 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import PhotoCard from "./PhotoCard";
+import React from "react";
 
-export default function Photo() {
-    const [nasaData, setNasaData] = useState([]);
-
-        return (
-            <div></div>
-        )
-
+function Image(props) {
+    return (
+        <img src={props.image}/>
+    )
 }
+export default Image;
