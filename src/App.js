@@ -4,11 +4,12 @@ import PhotoCard from "./components/PhotoCard";
 import axios from "axios";
 import PhotoTitle from "./components/PhotoTitle";
 import Photo from "./components/Photo";
-import PhotoDescription from "./components/PhotoDescription";
+import PhotoDescripton from "./components/PhotoDescription";
 
 function App() {
   const [photo, setPhoto] = useState([]);
   const [title, setTitle] = useState([]);
+  const [explanation, setExplanation] = useState([]);
 
   useEffect(() => {
     axios
@@ -17,6 +18,8 @@ function App() {
         console.log(response);
         setPhoto(response.data.url);
         setTitle(response.data.title);
+        setExplanation(response.data.explanation)
+
     })
     .catch(error => {
         console.log("the data was not returned" + error);
@@ -26,11 +29,14 @@ function App() {
   return (
     <div className="App">
     
-      <PhotoTitle />
+      <PhotoTitle header={title} />
       <Photo image={photo} />
+      <PhotoDescripton description={explanation} /> 
       <PhotoCard />
     </div>
   );
 }
 
 export default App;
+
+// *description={explanation}* IS the prop FOR PhotoDescription//
