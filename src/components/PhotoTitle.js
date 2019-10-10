@@ -8,3 +8,5 @@ const PhotoTitle = (props) => {
 }
 
 export default PhotoTitle;
+
+//when you call {props.header} header is the name of the "key" in the "key value pair" in the apps.js line

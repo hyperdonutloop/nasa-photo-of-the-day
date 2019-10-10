@@ -5,11 +5,13 @@ import axios from "axios";
 import PhotoTitle from "./components/PhotoTitle";
 import Photo from "./components/Photo";
 import PhotoDescripton from "./components/PhotoDescription";
+import PhotoDate from "./components/PhotoDate";
 
 function App() {
   const [photo, setPhoto] = useState([]);
   const [title, setTitle] = useState([]);
   const [explanation, setExplanation] = useState([]);
+  const [date, setDate] = useState([]);
 
   useEffect(() => {
     axios
@@ -19,6 +21,7 @@ function App() {
         setPhoto(response.data.url);
         setTitle(response.data.title);
         setExplanation(response.data.explanation)
+        setDate(response.data.date)
 
     })
     .catch(error => {
@@ -30,6 +33,7 @@ function App() {
     <div className="App">
     
       <PhotoTitle header={title} />
+      <PhotoDate subHeading={date} />
       <Photo image={photo} />
       <PhotoDescripton description={explanation} /> 
       <PhotoCard />
