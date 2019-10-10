@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import PhotoCard from "./components/PhotoCard";
 import axios from "axios";
 import PhotoTitle from "./components/PhotoTitle";
 import Photo from "./components/Photo";
 import PhotoDescripton from "./components/PhotoDescription";
 import PhotoDate from "./components/PhotoDate";
+import Header from "./components/Header";
+
 
 function App() {
   const [photo, setPhoto] = useState([]);
@@ -29,15 +30,18 @@ function App() {
     });
 }, []);
 
+
   return (
+
     <div className="App">
-    
+      <Header />
       <PhotoTitle header={title} />
       <PhotoDate subHeading={date} />
       <Photo image={photo} />
       <PhotoDescripton description={explanation} /> 
-      <PhotoCard />
+      
     </div>
+
   );
 }
 
