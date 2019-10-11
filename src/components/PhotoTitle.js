@@ -4,14 +4,13 @@ import styled from "styled-components";
 const PhotoTitle = (props) => {
     
     const WrapperDiv = styled.h1`
-        font-size: 3.5rem;
-        // background-color: whitesmoke;
+        font-size: 4.5rem;
         margin: 30px;
         color: whitesmoke;
     `;
     return (
         <WrapperDiv>
-            <h1>{props.header} </h1>
+            {props.header}
         </WrapperDiv>
     
     );
