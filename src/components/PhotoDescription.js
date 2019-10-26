@@ -14,6 +14,7 @@ const PhotoDescripton = (props) => {
         @media (max-width: 500px) {
             max-width: 100%
             font-size: 1.3rem;
+            padding: 20px;
         }
 
     
