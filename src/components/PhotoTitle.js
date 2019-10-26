@@ -7,6 +7,11 @@ const PhotoTitle = (props) => {
         font-size: 4.5rem;
         margin: 30px;
         color: whitesmoke;
+
+        @media (max-width: 500px) {
+            max-width: 100%
+            font-size: 2.3rem;
+        }
     `;
     return (
         <WrapperDiv>

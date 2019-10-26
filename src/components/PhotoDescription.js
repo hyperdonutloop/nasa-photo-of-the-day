@@ -11,6 +11,13 @@ const PhotoDescripton = (props) => {
         text-align: justify;
         color: whitesmoke;
 
+        @media (max-width: 500px) {
+            max-width: 100%
+            font-size: 1.3rem;
+        }
+
+    
+
     `;
 
     return (
