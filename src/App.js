@@ -6,6 +6,7 @@ import Photo from "./components/Photo";
 import PhotoDescripton from "./components/PhotoDescription";
 import PhotoDate from "./components/PhotoDate";
 import Header from "./components/Header";
+import GitHubFooter from "./components/Footer";
 
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
       <PhotoDate subHeading={date} />
       <Photo image={photo} />
       <PhotoDescripton description={explanation} /> 
-      
+      <GitHubFooter />
     </div>
 
   );
