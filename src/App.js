@@ -8,12 +8,15 @@ import PhotoDate from "./components/PhotoDate";
 import Navigation from "./components/Navigation";
 import GitHubFooter from "./components/Footer";
 
+// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+// import Loader from 'react-loader-spinner';
 
 function App() {
   const [photo, setPhoto] = useState([]);
   const [title, setTitle] = useState([]);
   const [explanation, setExplanation] = useState([]);
   const [date, setDate] = useState([]);
+  const [loading, isLoading] = useState(false);
 
   useEffect(() => {
     axios
@@ -22,8 +25,10 @@ function App() {
         console.log(response);
         setPhoto(response.data.url);
         setTitle(response.data.title);
-        setExplanation(response.data.explanation)
-        setDate(response.data.date)
+        setExplanation(response.data.explanation);
+        setDate(response.data.date);
+        // loading(response.data);
+        // this.loading = true;
 
     })
     .catch(error => {
@@ -32,8 +37,17 @@ function App() {
 }, []);
 
 
+  
+// {isLoading && <div><Loader
+//   type="Puff"
+//   color="#00BFFF"
+//   height={100}
+//   width={100}
+//   timeout={3000} //3 secs
+// /></div>
+// }
   return (
-
+    
     <div className="App">
       <Navigation />
       <PhotoTitle header={title} />
