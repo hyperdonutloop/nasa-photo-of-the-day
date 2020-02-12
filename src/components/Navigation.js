@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { Wrapper } from './styles/Navigation-Styles.js';
 
 import useDarkMode from './hooks/useDarkMode.js';
@@ -15,10 +14,9 @@ const Navigation = () => {
     <Wrapper>
       <div className="navigation">
         <div className="title">
-          <h4>NASA Photo of the Day</h4>
-        </div>
+          <p>NASA Photo of the Day</p>
+      </div>
       
-
       <div className="switch-wrapper">
         {darkMode && <div className="sun-white"></div>}
         {!darkMode && <div className="sun"></div>}

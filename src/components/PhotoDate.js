@@ -1,20 +1,16 @@
 import React from "react";
-import styled from "styled-components";
+
+import { Wrapper } from './styles/PhotoDate-Styles.js';
 
 const PhotoDate = (props) => {
 
-    const WrapperDiv = styled.h1`
-        display: flex
-        justify-content: center;
-        /* color: whitesmoke; */
-        
-    `;
-
-    return (
-        <WrapperDiv>
-            {props.subHeading}
-        </WrapperDiv>
-    )
+  return (
+    <Wrapper>
+      <div className="subHeading">
+        {props.subHeading}
+      </div>  
+    </Wrapper>
+  )
 }
 
 export default PhotoDate;

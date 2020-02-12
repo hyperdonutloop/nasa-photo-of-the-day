@@ -1,24 +1,17 @@
 import React from "react";
-import styled from "styled-components";
+
+import { Wrapper } from './styles/PhotoTitle-Styles.js';
 
 const PhotoTitle = (props) => {
-    
-    const WrapperDiv = styled.h1`
-        font-size: 4.5rem;
-        margin: 30px;
-        /* color: whitesmoke; */
 
-        @media (max-width: 500px) {
-            max-width: 100%
-            font-size: 2.3rem;
-        }
-    `;
-    return (
-        <WrapperDiv>
-            {props.header}
-        </WrapperDiv>
-    
-    );
+  return (
+      <Wrapper>
+        <div className="header">
+          {props.header}
+        </div>
+      </Wrapper>
+
+  );
 }
 
 export default PhotoTitle;
