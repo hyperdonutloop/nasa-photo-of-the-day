@@ -8,8 +8,8 @@ import 'normalize.css';
 const GithubFooter = () => {
 
     const LogoWrapper = styled.div`
-    .github-logo {
-        height: 50px;
+    .me {
+        height: auto;
         width: 50px;
         border-radius: 50%;
         
@@ -29,13 +29,13 @@ const WordWrapper = styled.div`
         <div className="footer">
         <a href="https://github.com/hyperdonutloop">
             <LogoWrapper>
-            <img className="github-logo" src={require ("../images/Octocat.jpg")} alt="github logo"></img>
+            <img className="me" src={require ("../images/me.png")} alt="github logo"></img>
             
             </LogoWrapper>
             
         </a>
         <WordWrapper>
-        <p className="hyper">@hyperdonutloop</p>
+        <p className="hyper">Say 👋🏼 on GitHub</p>
         </WordWrapper>
         </div>
         
