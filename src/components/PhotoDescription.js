@@ -9,7 +9,7 @@ const PhotoDescripton = (props) => {
         line-height: 1.6em;
         letter-spacing: 2px;
         text-align: justify;
-        color: whitesmoke;
+        /* color: whitesmoke; */
 
         @media (max-width: 500px) {
             max-width: 100%

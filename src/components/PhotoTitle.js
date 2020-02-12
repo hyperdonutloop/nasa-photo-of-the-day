@@ -6,7 +6,7 @@ const PhotoTitle = (props) => {
     const WrapperDiv = styled.h1`
         font-size: 4.5rem;
         margin: 30px;
-        color: whitesmoke;
+        /* color: whitesmoke; */
 
         @media (max-width: 500px) {
             max-width: 100%

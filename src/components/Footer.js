@@ -18,7 +18,7 @@ const GithubFooter = () => {
 
 const WordWrapper = styled.div`
    
-    color: whitesmoke;
+    /* color: whitesmoke; */
     font-size: .8rem;
     padding-bottom: 10px;
 

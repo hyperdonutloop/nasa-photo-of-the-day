@@ -6,10 +6,54 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #353C51; */
+  min-height: 100%;
 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+html {
+  height: 100%;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.dark-mode {
+  color: #fff !important;
+  background-color: #27292D;
+
+  /* .navbar {
+    background-color: #1F2022;
+    border: none;
+  } */
+}
+
+.sun {
+  background: url('./images/sun.svg') 
+  no-repeat center;
+  background-size: 100%;
+  /* border: 2px dotted blue; */
+  /* height: 17px;
+  width: 17px; */
+}
+.moon {
+  background: url('./images/moon.svg') 
+  no-repeat center;
+  background-size: 100%;
+  /* border: 2px dotted blue; */
+  /* height: 17px; */
+}
+
+.sun-white {
+  background: url('./images/sun-white.svg') 
+  no-repeat center;
+  background-size: 100%;
+}
+.moon-white {
+  background: url('./images/moon-white.svg') 
+  no-repeat center;
+  background-size: 100%;
 }

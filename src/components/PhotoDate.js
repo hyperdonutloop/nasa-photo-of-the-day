@@ -6,7 +6,7 @@ const PhotoDate = (props) => {
     const WrapperDiv = styled.h1`
         display: flex
         justify-content: center;
-        color: whitesmoke;
+        /* color: whitesmoke; */
         
     `;
 

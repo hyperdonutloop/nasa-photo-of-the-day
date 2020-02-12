@@ -5,7 +5,7 @@ import PhotoTitle from "./components/PhotoTitle";
 import Photo from "./components/Photo";
 import PhotoDescripton from "./components/PhotoDescription";
 import PhotoDate from "./components/PhotoDate";
-import Header from "./components/Header";
+import Navigation from "./components/Navigation";
 import GitHubFooter from "./components/Footer";
 
 
@@ -35,7 +35,7 @@ function App() {
   return (
 
     <div className="App">
-      <Header />
+      <Navigation />
       <PhotoTitle header={title} />
       <PhotoDate subHeading={date} />
       <Photo image={photo} />
