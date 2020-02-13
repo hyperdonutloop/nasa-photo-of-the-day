@@ -8,11 +8,13 @@ const GithubFooter = () => {
 
     return (
         <div className="footer">
-        <a href="https://github.com/hyperdonutloop">
+        <a 
+          href="https://github.com/hyperdonutloop" 
+          target="_blank" 
+          rel="noopener noreferrer">
             <LogoWrapper>
              <img className="me" src={require ("../images/me.png")} alt="avatar"></img>
-            </LogoWrapper>
-            
+            </LogoWrapper>  
         </a>
         <WordWrapper>
           <div className="words">
