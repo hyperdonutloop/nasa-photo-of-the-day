@@ -18,7 +18,7 @@ const GithubFooter = () => {
         </a>
         <WordWrapper>
           <div className="words">
-            <p>Say <span role="img" aria-label="wave">👋🏼</span>on GitHub</p>
+    <p>Say <span role="img" aria-label="wave">👋🏼</span>{' '}on GitHub</p>
           </div>
         </WordWrapper>
         </div>
